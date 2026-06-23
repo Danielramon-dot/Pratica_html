@@ -6,32 +6,54 @@
     <title>Genius Site</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo-container">
-          <img
-            src="img/ChatGPT Image 18 de jun. de 2026, 02_36_31.png"
-            alt="Logo da Genius"
-            class="logo"
-          />
+        <div class="navbar-esquerda">
+          <div class="menu-btn" onclick="abrirMenu()">☰</div>
+
+          <div class="logo-container">
+            <img
+              src="img/ChatGPT Image 23 de jun. de 2026, 08_31_20.png"
+              alt="Logo da Genius"
+              class="logo"
+            />
+          </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+          <div class="sidebar-header">
+            <h2>Menu</h2>
+            <span class="close-btn" onclick="fecharMenu()">✖</span>
+          </div>
+
+          <ul>
+            <li>
+              <button onclick="alternarTema()">🌙 Modo Escuro</button>
+            </li>
+          </ul>
         </div>
 
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Redes Sociais</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
+
         <a href="#" class="btn-login">Login</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="inicio">
         <div class="hero-texto">
           <h1>
             TRANSFORME DADOS EM
@@ -48,24 +70,24 @@
         </div>
       </section>
 
-      <section class="container-cards">
+      <section class="container-cards" id="servicos">
         <div class="card">
-          <h2>Sites</h2>
+          <h2>Sites🌐</h2>
           <p>Desenvolvimento de sites.</p>
         </div>
 
         <div class="card">
-          <h2>Sistemas</h2>
+          <h2>Sistemas⚙️</h2>
           <p>Automação de processos.</p>
         </div>
 
         <div class="card">
-          <h2>Suporte</h2>
+          <h2>Suporte🎧</h2>
           <p>Atendimento especializado.</p>
         </div>
       </section>
 
-      <section class="sobre">
+      <section class="sobre" id="sobre">
         <div class="sobre-conteudo">
           <h2>Sobre a Genius</h2>
 
@@ -73,7 +95,8 @@
             A Genius é uma empresa focada em transformar dados em soluções
             inteligentes. Desenvolvemos sites, sistemas e ferramentas
             tecnológicas que ajudam empresas a crescer, otimizar processos e
-            tomar decisões mais eficientes.
+            tomar decisões mais eficientes. Trabalhamos com sistemas de gestão,
+            automação comercial e desenvolvimento de aplicativos móveis.
           </p>
 
           <p>
@@ -91,7 +114,7 @@
 
         <div class="diferenciais-container">
           <div class="diferencial">
-            <h3>Inovação</h3>
+            <h3>🚀 Inovação</h3>
             <p>
               Utilizamos tecnologias modernas para criar soluções eficientes e
               escaláveis.
@@ -99,7 +122,7 @@
           </div>
 
           <div class="diferencial">
-            <h3>Performance</h3>
+            <h3>⚡ Performance</h3>
             <p>
               Sistemas rápidos, otimizados e preparados para acompanhar o
               crescimento do seu negócio.
@@ -107,7 +130,7 @@
           </div>
 
           <div class="diferencial">
-            <h3>Segurança</h3>
+            <h3>🔒 Segurança</h3>
             <p>
               Proteção de dados e boas práticas para garantir confiabilidade e
               tranquilidade.
@@ -115,7 +138,7 @@
           </div>
 
           <div class="diferencial">
-            <h3>Suporte</h3>
+            <h3>🤝 Suporte</h3>
             <p>
               Atendimento próximo e suporte especializado para auxiliar em cada
               etapa.
@@ -123,10 +146,80 @@
           </div>
         </div>
       </section>
+
+      <section class="contato" id="contato">
+        <h2>Entre em Contato</h2>
+
+        <p class="contato-subtitulo">
+          Estamos prontos para transformar suas ideias em soluções inteligentes.
+        </p>
+
+        <div class="contato-container">
+          <div class="contato-card">
+            <h3>📧 E-mail</h3>
+            <p>contato@genius.com</p>
+          </div>
+
+          <div class="contato-card">
+            <h3>📱 WhatsApp</h3>
+            <p>(88) 99999-9999</p>
+          </div>
+
+          <div class="contato-card">
+            <h3>📍 Localização</h3>
+            <p>Itapipoca - CE, Brasil</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn-orcamento">Solicitar Orçamento</a>
+      </section>
     </main>
 
-    <footer>
-      <p>© 2026 Genius. Todos os direitos reservados.</p>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-coluna">
+          <h3>GENIUS</h3>
+          <p>
+            Transformando dados em decisões inteligentes através de soluções
+            tecnológicas inovadoras.
+          </p>
+
+          <div class="footer-redes">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="#" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-coluna">
+          <h3>Links Rápidos</h3>
+
+          <a href="#inicio">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <div class="footer-coluna">
+          <h3>Contato</h3>
+
+          <p>📧 contato@genius.com</p>
+          <p>📱 (88) 99999-9999</p>
+          <p>📍 Itapipoca - CE</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Genius. Todos os direitos reservados.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
